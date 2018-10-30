@@ -2,6 +2,6 @@ applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
   routes:
-  - route: pal-tracker-patient-okapi.apps.testreview.pal.pivotal.io
+  - route: pal-tracker-testreview-okapi.apps.pikes.pal.pivotal.io
   env:
     WELCOME_MESSAGE: Hello from Review Environment
