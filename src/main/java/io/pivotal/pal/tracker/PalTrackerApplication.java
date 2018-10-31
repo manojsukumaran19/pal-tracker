@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
@@ -14,6 +15,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import javax.sql.DataSource;
 
 @SpringBootApplication
+@EnableAutoConfiguration
 public class PalTrackerApplication {
     @Autowired
     DataSource dsc;

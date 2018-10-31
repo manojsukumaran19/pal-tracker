@@ -22,9 +22,9 @@ public class EnvController {
     ) {
         this.port = port;
         this.memoryLimit = memoryLimit;
-        this.cfInstanceIndex = cfInstanceIndex;
         this.cfInstanceAddress = cfInstanceAddress;
-    }
+        this.cfInstanceIndex = cfInstanceIndex;
+        }
 
     @GetMapping("/env")
     public Map<String, String> getEnv() {
